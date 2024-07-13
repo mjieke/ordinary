@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>后记</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> 第一章</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> 第二章</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> 第三章</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> 第四章</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> 第五章</a></li><li class="chapter-item expanded "><a href="chapter_6.html"><strong aria-hidden="true">6.</strong> 第六章</a></li><li class="chapter-item expanded "><a href="chapter_7.html"><strong aria-hidden="true">7.</strong> 第七章</a></li><li class="chapter-item expanded "><a href="chapter_8.html"><strong aria-hidden="true">8.</strong> 第八章</a></li><li class="chapter-item expanded "><a href="chapter_9.html"><strong aria-hidden="true">9.</strong> 第九章</a></li><li class="chapter-item expanded "><a href="chapter_10.html"><strong aria-hidden="true">10.</strong> 第十章</a></li><li class="chapter-item expanded "><a href="chapter_11.html"><strong aria-hidden="true">11.</strong> 第十一章</a></li><li class="chapter-item expanded "><a href="chapter_12.html"><strong aria-hidden="true">12.</strong> 第十二章</a></li><li class="chapter-item expanded "><a href="chapter_13.html"><strong aria-hidden="true">13.</strong> 第十三章</a></li><li class="chapter-item expanded "><a href="chapter_14.html"><strong aria-hidden="true">14.</strong> 第十四章</a></li><li class="chapter-item expanded "><a href="chapter_15.html"><strong aria-hidden="true">15.</strong> 第十五章</a></li><li class="chapter-item expanded "><a href="chapter_16.html"><strong aria-hidden="true">16.</strong> 第十六章</a></li><li class="chapter-item expanded "><a href="chapter_17.html"><strong aria-hidden="true">17.</strong> 第十七章</a></li><li class="chapter-item expanded "><a href="chapter_18.html"><strong aria-hidden="true">18.</strong> 第十八章</a></li><li class="chapter-item expanded "><a href="chapter_19.html"><strong aria-hidden="true">19.</strong> 第十九章</a></li><li class="chapter-item expanded "><a href="chapter_20.html"><strong aria-hidden="true">20.</strong> 第二十章</a></li><li class="chapter-item expanded "><a href="chapter_21.html"><strong aria-hidden="true">21.</strong> 第二十一章</a></li><li class="chapter-item expanded "><a href="chapter_22.html"><strong aria-hidden="true">22.</strong> 第二十二章</a></li><li class="chapter-item expanded "><a href="chapter_23.html"><strong aria-hidden="true">23.</strong> 第二十三章</a></li><li class="chapter-item expanded "><a href="chapter_24.html"><strong aria-hidden="true">24.</strong> 第二十四章</a></li><li class="chapter-item expanded "><a href="chapter_25.html"><strong aria-hidden="true">25.</strong> 第二十五章</a></li><li class="chapter-item expanded "><a href="chapter_26.html"><strong aria-hidden="true">26.</strong> 第二十六章</a></li><li class="chapter-item expanded "><a href="chapter_27.html"><strong aria-hidden="true">27.</strong> 第二十七章</a></li><li class="chapter-item expanded "><a href="chapter_28.html"><strong aria-hidden="true">28.</strong> 第二十八章</a></li><li class="chapter-item expanded "><a href="chapter_29.html"><strong aria-hidden="true">29.</strong> 第二十九章</a></li><li class="chapter-item expanded "><a href="chapter_30.html"><strong aria-hidden="true">30.</strong> 第三十章</a></li><li class="chapter-item expanded "><a href="chapter_31.html"><strong aria-hidden="true">31.</strong> 第三十一章</a></li><li class="chapter-item expanded "><a href="chapter_32.html"><strong aria-hidden="true">32.</strong> 第三十二章</a></li><li class="chapter-item expanded "><a href="chapter_33.html"><strong aria-hidden="true">33.</strong> 第三十三章</a></li><li class="chapter-item expanded "><a href="chapter_34.html"><strong aria-hidden="true">34.</strong> 第三十四章</a></li><li class="chapter-item expanded "><a href="chapter_35.html"><strong aria-hidden="true">35.</strong> 第三十五章</a></li><li class="chapter-item expanded "><a href="chapter_36.html"><strong aria-hidden="true">36.</strong> 第三十六章</a></li><li class="chapter-item expanded "><a href="chapter_37.html"><strong aria-hidden="true">37.</strong> 第三十七章</a></li><li class="chapter-item expanded "><a href="chapter_38.html"><strong aria-hidden="true">38.</strong> 第三十八章</a></li><li class="chapter-item expanded "><a href="chapter_39.html"><strong aria-hidden="true">39.</strong> 第三十九章</a></li><li class="chapter-item expanded "><a href="chapter_40.html"><strong aria-hidden="true">40.</strong> 第四十章</a></li><li class="chapter-item expanded "><a href="chapter_41.html"><strong aria-hidden="true">41.</strong> 第四十一章</a></li><li class="chapter-item expanded "><a href="chapter_42.html"><strong aria-hidden="true">42.</strong> 第四十二章</a></li><li class="chapter-item expanded "><a href="chapter_43.html"><strong aria-hidden="true">43.</strong> 第四十三章</a></li><li class="chapter-item expanded "><a href="chapter_44.html"><strong aria-hidden="true">44.</strong> 第四十四章</a></li><li class="chapter-item expanded "><a href="chapter_45.html"><strong aria-hidden="true">45.</strong> 第四十五章</a></li><li class="chapter-item expanded "><a href="chapter_46.html"><strong aria-hidden="true">46.</strong> 第四十六章</a></li><li class="chapter-item expanded "><a href="chapter_47.html"><strong aria-hidden="true">47.</strong> 第四十七章</a></li><li class="chapter-item expanded "><a href="chapter_48.html"><strong aria-hidden="true">48.</strong> 第四十八章</a></li><li class="chapter-item expanded "><a href="chapter_49.html"><strong aria-hidden="true">49.</strong> 第四十九章</a></li><li class="chapter-item expanded "><a href="chapter_50.html"><strong aria-hidden="true">50.</strong> 第五十章</a></li><li class="chapter-item expanded "><a href="chapter_51.html"><strong aria-hidden="true">51.</strong> 第五十一章</a></li><li class="chapter-item expanded "><a href="chapter_52.html"><strong aria-hidden="true">52.</strong> 第五十二章</a></li><li class="chapter-item expanded "><a href="chapter_53.html"><strong aria-hidden="true">53.</strong> 第五十三章</a></li><li class="chapter-item expanded "><a href="chapter_54.html"><strong aria-hidden="true">54.</strong> 第五十四章</a></li><li class="chapter-item expanded "><a href="chapter_55.html" class="active"><strong aria-hidden="true">55.</strong> 后记</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <center>后记</center>
+<p>这五卷集可以说是我四十岁之前学活动的一个基本总结。其间包含着青春的激情，痛苦和失误，包含着劳动的汗水、人生的辛酸和对这个冷暖世界的复杂体验。重要的是，它也包含了我对生活从未淡薄的挚爱与深情。至此，我也就可以对我的青年时代投去后一瞥，从而和它永远告别了。</p>
+<p>这五卷集的出版，得益于陕西人民出版社和本书编选者陈泽顺、刑良俊同志，没有他们的热情帮助，这件事是不可能做成的。</p>
+<p>我庆幸降生于这个伟大而值得自豪的国。它深厚的历史化，辽阔的疆土和占地球的五分之一的人口，使得其间任何人的劳动都能得到广大的支持，同时也生广大的影响。无论我们曾经历了多少痛苦和磨难，且还将要面对多少严峻考验：也不论我们处于何种位置何种境地，我们都会为能服务于伟大的祖国和如此众多的同胞而心甘情愿地献出自己毕生的精力和才智。</p>
+<p>我感谢我所生活的这个充满戏剧性的时代，也感谢与我生活这同一时代的人们。所有这一切历史构成，都给我提供了一种人生的契机，使我意外地有可能如愿从事自己钟爱的学事业，将自己的心灵和人世间无数的心灵沟通。正是千千万万我的同时代读者一次又一次促我投入也许并不是我完全能胜任的艰巨工作。现，我总算能将自己的一些微不足道的收获献给我的读者朋友。</p>
+<p>那么，对于一个原本一无所有的农民的儿子，还有什么不满足呢？</p>
+<p>是的，不满足。我应该把一切进行得比现好。历史，社会环境，尤其是个人的素养，都局限人——不仅局限艺术作品的人，先局限它的创造者。所有人的生命历程人类历史的长河都是一个小小的段落，因此，每一代人都有自己的命注定的遗撼。遗撼，深深的遗撼。</p>
+<p>唯一能自慰的是，我们曾真诚而充满激情地这个世界上生活过，竭全力地劳动过，并不计代价地将自己的血汗献给了不死的人类之树。</p>
+<p>我们的世界生激烈演变的大潮。人类社会将以全然不同于以往的面貌进入另一世纪。我们生而逢时，不仅可以目睹一幕紧接一幕的大剧，也将不可避免地要其间扮演某种属于自己的角色。现实生活的任何人都不可能逃避自己历史性的责任。无疑，未来的年月里，生活和艺术都会向作家提出为繁难而严厉的要求。如果沉醉满足于自己以往的历史就无异于生命大限的终临，人生旅程时刻处于“零公里”处。那么，要旨仍然应该是先战胜自己，并将精神提升到不断展着的生活所要求的那种高，才有可能使自己重走出洼地，亦步亦趋跟着生活进入的境界。不管实际结果如何，这个起码的觉悟应当具备。</p>
+<p>结论一目了然：只能永远把艰辛的劳动看作是生命的必要；即使没有收获的指望，也心平气静地继续耕种。1992年春天于西安。</p>
+<p>=已完结=</p>
+<p>更多电子书请访问:http://www.ixdzs.com</p>
+<p>手机访问:http://m.ixdzs.com</p>
+<center>本章完结</center>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_54.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_54.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
